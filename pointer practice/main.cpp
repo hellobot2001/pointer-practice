@@ -86,5 +86,15 @@ int main()
 		vec[i] = randn;
 		cout << i << ": " << randn << endl;
 	}
-	int* v1 = vec;
+	int* v1 = &vec[0];
+	int* v2 = &vec[vec.size() - 1];
+	int ctr2 = 0;
+	cout << v1 + ctr2 << " " << v2 - ctr2 << " " << (v1 + ctr2 < v2 - ctr2) << endl;
+	while (v1 + ctr2 < v2 - ctr2)
+	{
+		ctr2++;
+	}
+	cout << *(v1 + ctr2) << endl;
+	delete v2; // DESTROY !!!!!!!!!
+	// THERE'S NOTHING LEFT !!!!!!!!
 }
