@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 
 using namespace std;
 
@@ -62,7 +62,7 @@ int main()
 	delete[] a2;
 	*/
 
-	int* arr = allocate_array();
+	/*int* arr = allocate_array();
 
 	//blah blah blah
 
@@ -74,7 +74,7 @@ int main()
 		delete[] p;
 		}*/
 
-	int* ptr = new int; //allocates
+	/*int* ptr = new int; //allocates
 
 	*ptr = 12;
 
@@ -85,4 +85,4 @@ int main()
 
 	ptr = nullptr; //nullptr == 0
 	cout << 10 + (int)(nullptr) << endl;
-}
+}*/
